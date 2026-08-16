@@ -9,6 +9,9 @@
   "robots": {
     "index": true
   },
+  "icons": {
+    "icon": "/logo.jpg"
+  },
   "accessibility": {
     "addBypassLinks": false,
     "ignoreReducedMotion": false

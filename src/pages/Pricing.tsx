@@ -86,9 +86,11 @@ export default function Pricing() {
                 </div>
               </div>
 
-              <p className="font-serif font-black leading-none" style={{ fontSize: 64, color: '#C9A24B' }}>
-                ${totalPrice.toLocaleString()}&thinsp;<span style={{ fontSize: 24, fontWeight: 600 }}>USD</span>
-              </p>
+              <div className="flex items-baseline justify-center gap-1.5 font-serif text-[#C9A24B] tabular-nums my-3">
+                <span className="text-3xl sm:text-4xl font-bold">$</span>
+                <span className="text-5xl sm:text-6xl font-black tracking-tight">{totalPrice.toLocaleString()}</span>
+                <span className="text-lg sm:text-xl font-semibold tracking-wider text-white/70 ml-1">USD</span>
+              </div>
               <p className="text-white/60 text-xs mt-3 max-w-sm mx-auto leading-relaxed">
                 ($4,950 USD per person × {members} {members === 1 ? 'guest' : 'guests'})
               </p>

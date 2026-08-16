@@ -300,13 +300,13 @@ export function Footer() {
                 href="mailto:sales@kaiotix.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-4 py-2.5 rounded-md bg-white hover:bg-white/95 transition-all shadow-md border border-white/20 my-1"
+                className="inline-flex items-center rounded overflow-hidden shadow-sm hover:opacity-90 transition-all border border-white/20"
                 title="Kaiotix Technologies"
               >
                 <img
                   src={IMG_KAIOTIX_LOGO}
                   alt="Kaiotix Technologies"
-                  className="h-8 sm:h-10 md:h-11 w-auto object-contain max-w-[220px] sm:max-w-[280px]"
+                  className="h-8 sm:h-9 md:h-10 w-auto block object-cover"
                 />
               </a>
               <span className="text-white/25">·</span>
