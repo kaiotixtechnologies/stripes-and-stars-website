@@ -1,6 +1,11 @@
 {
-  "title": "Stars, Stripes & Wild India — Astrophotography & Tiger Expedition",
+  "title": "Stars, Stripes & Wild India",
   "description": "An exclusive 10-day Astrophotography and Tiger Photography Expedition in Ranthambore & Hanle, India.",
+  "openGraph": {
+    "title": "Stars, Stripes & Wild India",
+    "description": "An exclusive 10-day Astrophotography and Tiger Photography Expedition in Ranthambore & Hanle, India.",
+    "image": "https://starsnstripes.vercel.app/logo.jpg"
+  },
   "robots": {
     "index": true
   },
