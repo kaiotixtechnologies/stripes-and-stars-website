@@ -1,7 +1,8 @@
 {
-  "description": "Converts markdown files into structured, readable web content, enabling users to easily visualize and share formatted documents online.",
+  "title": "Stars, Stripes & Wild India — Astrophotography & Tiger Expedition",
+  "description": "An exclusive 10-day Astrophotography and Tiger Photography Expedition in Ranthambore & Hanle, India.",
   "robots": {
-    "index": false
+    "index": true
   },
   "accessibility": {
     "addBypassLinks": false,
