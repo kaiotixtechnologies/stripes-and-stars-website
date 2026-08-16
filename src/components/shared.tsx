@@ -306,7 +306,7 @@ export function Footer() {
                 <img
                   src={IMG_KAIOTIX_LOGO}
                   alt="Kaiotix Technologies"
-                  className="h-9 sm:h-11 md:h-12 w-auto object-contain max-w-[200px] sm:max-w-[250px]"
+                  className="h-8 sm:h-10 md:h-11 w-auto object-contain max-w-[220px] sm:max-w-[280px]"
                 />
               </a>
               <span className="text-white/25">·</span>
