@@ -5,19 +5,14 @@ import { LOADER_VIDEO_DATA } from '../assets/loaderData'
 
 export default function Layout() {
   const { pathname } = useLocation()
-  const [loading, setLoading] = useState(false)
+  const [loading, setLoading] = useState(true)
   const isFirstRender = useRef(true)
   const videoRef = useRef<HTMLVideoElement>(null)
 
   useEffect(() => {
     window.scrollTo(0, 0)
 
-    if (isFirstRender.current) {
-      isFirstRender.current = false
-      return
-    }
-
-    // Trigger video loader overlay on route change
+    // Trigger video loader overlay on initial page load and route changes
     setLoading(true)
 
     if (videoRef.current) {
@@ -29,9 +24,14 @@ export default function Layout() {
       }
     }
 
+    const duration = isFirstRender.current ? 2000 : 1200
+    if (isFirstRender.current) {
+      isFirstRender.current = false
+    }
+
     const timer = setTimeout(() => {
       setLoading(false)
-    }, 1200)
+    }, duration)
 
     return () => clearTimeout(timer)
   }, [pathname])

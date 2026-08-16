@@ -293,9 +293,26 @@ export function Footer() {
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 text-white/40 text-xs">
           <div>
             <p>© 2027 Stars, Stripes &amp; Wild India. All rights reserved.</p>
-            <p className="mt-1 text-xs text-white/35">
-              Developed by <span className="text-[#C9A24B] font-medium">Kaiotix Technologies</span> &nbsp;·&nbsp; Mail : <a href="mailto:sales@kaiotix.com" className="hover:underline text-white/50 transition-colors">sales@kaiotix.com</a>
-            </p>
+            <div className="mt-3 flex flex-wrap items-center gap-2.5">
+              <span className="text-xs text-white/45 font-medium">Developed by</span>
+              <a
+                href="mailto:sales@kaiotix.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-3 py-1.5 rounded bg-white hover:bg-white/95 transition-all shadow-sm border border-white/20"
+                title="Kaiotix Technologies"
+              >
+                <img
+                  src="/kaiotix-logo.jpg"
+                  alt="Kaiotix Technologies"
+                  className="h-6 sm:h-7 object-contain"
+                />
+              </a>
+              <span className="text-white/25">·</span>
+              <span className="text-xs text-white/45">
+                Mail: <a href="mailto:sales@kaiotix.com" className="hover:underline text-[#C9A24B] font-medium transition-colors">sales@kaiotix.com</a>
+              </span>
+            </div>
           </div>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white/60 transition-colors">Terms &amp; Conditions</a>
