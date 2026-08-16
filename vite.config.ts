@@ -81,8 +81,8 @@ function figmaSiteConfiguration(config: FigmaSiteConfiguration): Plugin {
     return html.replace(`<!-- ${slotName} -->`, content)
   }
 
-  const title = config.title ?? "Figma Make App"
-  const description = config.description ?? ''
+  const title = config.title ?? "Stars, Stripes & Wild India — Astrophotography & Tiger Expedition"
+  const description = config.description ?? "An exclusive 10-day Astrophotography and Tiger Photography Expedition in Ranthambore & Hanle, India."
   const favicon = config.icons?.icon ?? ''
   const socialImage = config.openGraph?.image ?? ''
   const language = sanitizeHtmlValue(config.language) || 'en'
