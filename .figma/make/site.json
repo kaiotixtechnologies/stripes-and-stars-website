@@ -1,0 +1,10 @@
+{
+  "description": "Converts markdown files into structured, readable web content, enabling users to easily visualize and share formatted documents online.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

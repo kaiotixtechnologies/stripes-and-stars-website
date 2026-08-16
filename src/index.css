@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-serif: 'Playfair Display', ui-serif, Georgia, serif;
+  --font-sans:  'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ── Base ────────────────────────────────────────────────────────────────── */
+html { scroll-behavior: smooth; }
+
+* { scrollbar-width: none; -ms-overflow-style: none; }
+*::-webkit-scrollbar { display: none; }
+
+body {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  background: #FAFAF7;
+  color: #0D1B2A;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Design tokens ───────────────────────────────────────────────────────── */
+:root {
+  --bg:          #FAFAF7;
+  --bg-alt:      #F2EDE2;
+  --bg-card:     #FFFFFF;
+  --navy:        #0D1B2A;
+  --navy-mid:    #1A3048;
+  --gold:        #A07828;   /* AA contrast on white: 4.6:1 */
+  --gold-light:  #C9A24B;   /* for use on dark backgrounds */
+  --amber:       #C06A1A;
+  --text:        #0D1B2A;
+  --text-2:      #3D4F60;
+  --text-3:      #637282;
+  --border:      rgba(13,27,42,0.1);
+  --border-gold: rgba(160,120,40,0.22);
+  --shadow:      0 2px 16px rgba(13,27,42,0.07), 0 1px 4px rgba(13,27,42,0.05);
+  --shadow-md:   0 4px 32px rgba(13,27,42,0.1), 0 2px 8px rgba(13,27,42,0.06);
+}
+
+/* ── Utilities ───────────────────────────────────────────────────────────── */
+.eyebrow {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.gold-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(160,120,40,0.25), transparent);
+}
+
+/* ── Hero entrance animation ─────────────────────────────────────────────── */
+@keyframes heroFadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero-in     { animation: heroFadeUp 0.9s ease both; }
+.hero-in-d1  { animation-delay: 0.12s; }
+.hero-in-d2  { animation-delay: 0.26s; }
+.hero-in-d3  { animation-delay: 0.40s; }
+.hero-in-d4  { animation-delay: 0.54s; }
+.hero-in-d5  { animation-delay: 0.68s; }
