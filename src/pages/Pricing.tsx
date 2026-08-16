@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { FadeIn, GoldDivider, Rule, CheckIcon, XIcon, Eyebrow, OutlineBtn, PageHero, IMG_TIGER1 } from '../components/shared'
+import { FadeIn, GoldDivider, Rule, CheckIcon, XIcon, Eyebrow, OutlineBtn, PageHero, IMG_TIGER1, CreditCardIcon, UsersIcon, GradCapIcon, CompassIcon, TentIcon, UtensilsIcon } from '../components/shared'
 import PaymentModal from '../components/PaymentModal'
 
 const INCLUDED = [
@@ -23,11 +23,11 @@ const NOT_INCLUDED = [
   'Personal expenses, gear rental, and alcohol',
 ]
 const GROUP = [
-  { icon: '👥', value: 'Max 8', label: 'Participants' },
-  { icon: '🎓', value: '2 + 1', label: 'Wildlife + Astro Guides' },
-  { icon: '🧭', value: 'Included', label: 'Local Naturalists' },
-  { icon: '🏕', value: 'Luxury', label: 'Jungle Lodge Standard' },
-  { icon: '🍽', value: 'Full Board', label: 'Most Meals Included' },
+  { icon: <UsersIcon className="w-5 h-5 text-[#A07828]" />, value: 'Max 8', label: 'Participants' },
+  { icon: <GradCapIcon className="w-5 h-5 text-[#A07828]" />, value: '2 + 1', label: 'Wildlife + Astro Guides' },
+  { icon: <CompassIcon className="w-5 h-5 text-[#A07828]" />, value: 'Included', label: 'Local Naturalists' },
+  { icon: <TentIcon className="w-5 h-5 text-[#A07828]" />, value: 'Luxury', label: 'Jungle Lodge Standard' },
+  { icon: <UtensilsIcon className="w-5 h-5 text-[#A07828]" />, value: 'Full Board', label: 'Most Meals Included' },
 ]
 
 export default function Pricing() {
@@ -102,7 +102,7 @@ export default function Pricing() {
                   style={{ background: '#A07828', color: '#fff' }}
                   onMouseEnter={e => (e.currentTarget.style.background = '#7A5C1E')}
                   onMouseLeave={e => (e.currentTarget.style.background = '#A07828')}>
-                  💳 Pay Deposit (${totalDeposit.toLocaleString()})
+                  <CreditCardIcon className="w-4 h-4" /> Pay Deposit (${totalDeposit.toLocaleString()})
                 </button>
                 <button
                   onClick={() => openCheckout(totalPrice, `Full Expedition Payment (${members} ${members === 1 ? 'Guest' : 'Guests'})`)}
@@ -215,7 +215,7 @@ export default function Pricing() {
                 onClick={() => openCheckout(1500, 'Expedition Reserve Deposit')}
                 className="inline-flex items-center justify-center px-8 py-3.5 text-[11px] tracking-[0.18em] uppercase font-semibold rounded-sm transition-all"
                 style={{ background: '#A07828', color: '#fff' }}>
-                💳 Pay Deposit ($1,500)
+                <span className="flex items-center gap-2"><CreditCardIcon className="w-4 h-4" /> Pay Deposit ($1,500)</span>
               </button>
               <OutlineBtn to="/faq">Read FAQ</OutlineBtn>
             </div>

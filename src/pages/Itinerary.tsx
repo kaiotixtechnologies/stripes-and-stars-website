@@ -16,7 +16,7 @@ const DAYS = [
 
 const GLANCE = [
   { date:'Apr 5',     location:'Pench',    morning:'—', afternoon:'Arrival + Briefing', evening:'Astro Session' },
-  { date:'Apr 6',     location:'Pench',    morning:'Free / Post-processing', afternoon:'Wildlife Safari', evening:'Astro Session (New Moon ✦)' },
+  { date:'Apr 6',     location:'Pench',    morning:'Free / Post-processing', afternoon:'Wildlife Safari', evening:'Astro Session (New Moon)' },
   { date:'Apr 7',     location:'Pench',    morning:'Free / Post-processing', afternoon:'Wildlife Safari', evening:'Astro Session' },
   { date:'Apr 8',     location:'Pench',    morning:'Free / Post-processing', afternoon:'Wildlife Safari', evening:'Astro Session' },
   { date:'Apr 9',     location:'Transfer', morning:'Farewell Breakfast', afternoon:'Drive + First Safari', evening:'Lodge check-in' },

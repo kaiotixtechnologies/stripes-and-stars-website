@@ -1,4 +1,4 @@
-import { FadeIn, GoldDivider, Rule, Eyebrow, GoldBtn, OutlineBtn, PageHero, IMG_TIGER_J } from '../components/shared'
+import { FadeIn, GoldDivider, Rule, Eyebrow, GoldBtn, OutlineBtn, PageHero, IMG_TIGER_J, CameraIcon, ShirtIcon, CreditCardIcon, BackpackIcon } from '../components/shared'
 
 const INSTRUCTORS = [
   { name:'P S Srinivas', role:'Astrophotography Guide', initials:'PS', color:'#A07828',
@@ -13,10 +13,10 @@ const INSTRUCTORS = [
 ]
 
 const BRING = [
-  { icon:'📷', title:'Photography Gear', items:['DSLR or mirrorless camera body (full-frame preferred)','Sturdy tripod — essential for astrophotography','Telephoto 100–400mm or longer for wildlife','Wide-angle 14–24mm for astro & landscape','Star tracker (optional but highly recommended)','Red-light headlamp (preserves night vision)','Extra batteries and memory cards','Dust-proof camera bag or rain cover'] },
-  { icon:'👕', title:'Clothing', items:['Neutral/earth-tone safari clothing (khaki, olive)','Thermal base layer for pre-dawn sessions','Light fleece or jacket for night sessions','Wide-brim hat and UV sunglasses','High-SPF sunscreen (50+)','Closed-toe shoes','Insect repellent (DEET-based)'] },
-  { icon:'💳', title:'Money & Documents', items:['Indian Rupee (INR) cash for tips & villages','Major cards accepted at lodges','e-Visa or tourist visa — apply in advance','Passport with 6+ months validity','Travel & health insurance documents','Emergency contact information'] },
-  { icon:'🎒', title:'Other Essentials', items:['Binoculars (8×42 recommended)','Reusable water bottle','Power bank & universal adapter (Type D/M)','Basic first-aid and personal medications',"Prescription medications with doctor's note",'Notebook or voice recorder for field notes'] },
+  { icon: <CameraIcon className="w-5 h-5 text-[#A07828]" />, title:'Photography Gear', items:['DSLR or mirrorless camera body (full-frame preferred)','Sturdy tripod — essential for astrophotography','Telephoto 100–400mm or longer for wildlife','Wide-angle 14–24mm for astro & landscape','Star tracker (optional but highly recommended)','Red-light headlamp (preserves night vision)','Extra batteries and memory cards','Dust-proof camera bag or rain cover'] },
+  { icon: <ShirtIcon className="w-5 h-5 text-[#A07828]" />, title:'Clothing', items:['Neutral/earth-tone safari clothing (khaki, olive)','Thermal base layer for pre-dawn sessions','Light fleece or jacket for night sessions','Wide-brim hat and UV sunglasses','High-SPF sunscreen (50+)','Closed-toe shoes','Insect repellent (DEET-based)'] },
+  { icon: <CreditCardIcon className="w-5 h-5 text-[#A07828]" />, title:'Money & Documents', items:['Indian Rupee (INR) cash for tips & villages','Major cards accepted at lodges','e-Visa or tourist visa — apply in advance','Passport with 6+ months validity','Travel & health insurance documents','Emergency contact information'] },
+  { icon: <BackpackIcon className="w-5 h-5 text-[#A07828]" />, title:'Other Essentials', items:['Binoculars (8×42 recommended)','Reusable water bottle','Power bank & universal adapter (Type D/M)','Basic first-aid and personal medications',"Prescription medications with doctor's note",'Notebook or voice recorder for field notes'] },
 ]
 
 export default function Instructors() {

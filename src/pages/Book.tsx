@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { FadeIn, GoldDivider, Rule, Eyebrow, OutlineBtn, PageHero, IMG_TIGER1 } from '../components/shared'
+import { FadeIn, GoldDivider, Rule, Eyebrow, OutlineBtn, PageHero, IMG_TIGER1, CreditCardIcon } from '../components/shared'
 import PaymentModal from '../components/PaymentModal'
 
 const STEPS = [
@@ -91,7 +91,7 @@ export default function Book() {
               onClick={() => setShowPayModal(true)}
               className="w-full py-3 text-[11px] tracking-[0.18em] uppercase font-semibold rounded-sm transition-all flex items-center justify-center gap-2 border border-[#A07828] text-[#A07828] hover:bg-[#A07828] hover:text-white"
             >
-              💳 Pay Deposit Directly ($1,500)
+              <CreditCardIcon className="w-4 h-4" /> Pay Deposit Directly ($1,500)
             </button>
             <OutlineBtn to="/pricing">Review Full Pricing</OutlineBtn>
           </FadeIn>
@@ -173,7 +173,7 @@ export default function Book() {
                   style={{ background: '#A07828', color: '#fff' }}
                   onMouseEnter={e => (e.currentTarget.style.background = '#7A5C1E')}
                   onMouseLeave={e => (e.currentTarget.style.background = '#A07828')}>
-                  💳 Proceed to Payment ($1,500 Deposit)
+                  <CreditCardIcon className="w-4 h-4" /> Proceed to Payment ($1,500 Deposit)
                 </button>
               </form>
             )}

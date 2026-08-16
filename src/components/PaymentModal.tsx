@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { CreditCardIcon, PhoneQrIcon, BankIcon, SparklesIcon, LockIcon, FileTextIcon } from './shared'
 
 export interface PaymentModalProps {
   isOpen: boolean
@@ -168,7 +169,7 @@ export default function PaymentModal({
                       : 'text-slate-600 hover:text-slate-900'
                   }`}
                 >
-                  <span>💳 Card</span>
+                  <span className="flex items-center gap-1.5"><CreditCardIcon className="w-4 h-4" /> Card</span>
                 </button>
                 <button
                   type="button"
@@ -179,7 +180,7 @@ export default function PaymentModal({
                       : 'text-slate-600 hover:text-slate-900'
                   }`}
                 >
-                  <span>📱 UPI / QR</span>
+                  <span className="flex items-center gap-1.5"><PhoneQrIcon className="w-4 h-4" /> UPI / QR</span>
                 </button>
                 <button
                   type="button"
@@ -190,7 +191,7 @@ export default function PaymentModal({
                       : 'text-slate-600 hover:text-slate-900'
                   }`}
                 >
-                  <span>🏦 Net Banking</span>
+                  <span className="flex items-center gap-1.5"><BankIcon className="w-4 h-4" /> Net Banking</span>
                 </button>
               </div>
 
@@ -206,7 +207,7 @@ export default function PaymentModal({
                       onClick={fillDemoData}
                       className="text-[11px] font-semibold text-[#A07828] hover:underline flex items-center gap-1"
                     >
-                      ✨ Auto-Fill Demo Card
+                      <span className="flex items-center gap-1"><SparklesIcon className="w-3.5 h-3.5 text-[#A07828]" /> Auto-Fill Demo Card</span>
                     </button>
                   </div>
 
@@ -271,7 +272,7 @@ export default function PaymentModal({
                     type="submit"
                     className="w-full py-3.5 mt-2 bg-[#A07828] hover:bg-[#7A5C1E] text-white font-semibold text-xs tracking-widest uppercase rounded shadow transition-all flex items-center justify-center gap-2"
                   >
-                    🔒 Pay ${amountUSD.toLocaleString()} USD
+                    <span className="flex items-center gap-2"><LockIcon className="w-4 h-4" /> Pay ${amountUSD.toLocaleString()} USD</span>
                   </button>
                 </form>
               )}
@@ -346,7 +347,7 @@ export default function PaymentModal({
                             : 'border-slate-200 text-slate-700 hover:border-slate-300'
                         }`}
                       >
-                        🏦 {bank}
+                        <span className="flex items-center gap-2"><BankIcon className="w-4 h-4 text-[#A07828]" /> {bank}</span>
                       </button>
                     ))}
                   </div>
@@ -361,7 +362,7 @@ export default function PaymentModal({
               )}
 
               <p className="text-[11px] text-slate-400 text-center mt-4">
-                🔒 256-Bit SSL Encrypted Demo Gateway. No real funds charged.
+                <span className="inline-flex items-center gap-1"><LockIcon className="w-3 h-3 text-slate-400 inline" /> 256-Bit SSL Encrypted Demo Gateway. No real funds charged.</span>
               </p>
             </div>
           )}
@@ -425,7 +426,7 @@ export default function PaymentModal({
                   onClick={() => alert(`Receipt downloaded for ${txnDetails.txnId}`)}
                   className="w-full py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded transition-all"
                 >
-                  📄 Download Receipt (PDF)
+                  <span className="flex items-center justify-center gap-2"><FileTextIcon className="w-4 h-4 text-slate-600" /> Download Receipt (PDF)</span>
                 </button>
                 <button
                   type="button"
