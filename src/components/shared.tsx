@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import logoImg from '../assets/logo.jpg'
+import kaiotixLogo from '../assets/kaiotix-logo.jpg'
 
 // ── Images ───────────────────────────────────────────────────────────────────
 export const IMG_HERO = 'https://images.unsplash.com/photo-1592636120953-3d2b28ebfd69?w=1800&h=1000&fit=crop&auto=format'
@@ -303,7 +304,7 @@ export function Footer() {
                 title="Kaiotix Technologies"
               >
                 <img
-                  src="/kaiotix-logo.jpg"
+                  src={kaiotixLogo}
                   alt="Kaiotix Technologies"
                   className="h-6 sm:h-7 object-contain"
                 />
