@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from 'react-router-dom'
 import { useEffect, useState, useRef } from 'react'
 import { Nav, Footer } from './shared'
-import loaderVideo from '../assets/loader.mp4'
+import { LOADER_VIDEO_DATA } from '../assets/loaderData'
 
 export default function Layout() {
   const { pathname } = useLocation()
@@ -48,16 +48,14 @@ export default function Layout() {
           <div className="relative w-48 h-48 sm:w-64 sm:h-64 rounded-full overflow-hidden border-2 border-[#A07828]/60 shadow-2xl bg-[#0D1B2A]">
             <video
               ref={videoRef}
+              src={LOADER_VIDEO_DATA}
               autoPlay
               loop
               muted
               playsInline
               preload="auto"
               className="w-full h-full object-cover"
-            >
-              <source src={loaderVideo} type="video/mp4" />
-              <source src="/loader.mp4" type="video/mp4" />
-            </video>
+            />
           </div>
           <p className="eyebrow text-xs tracking-[0.25em] text-[#C9A24B] uppercase animate-pulse">
             Loading Expedition...
