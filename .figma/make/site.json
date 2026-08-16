@@ -10,7 +10,7 @@
     "index": true
   },
   "icons": {
-    "icon": "/logo.jpg"
+    "icon": "/favicon.svg"
   },
   "accessibility": {
     "addBypassLinks": false,
