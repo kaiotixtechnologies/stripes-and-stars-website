@@ -297,7 +297,7 @@ export function Footer() {
             <div className="mt-3 flex flex-wrap items-center gap-2.5">
               <span className="text-xs text-white/45 font-medium">Developed by</span>
               <a
-                href="mailto:sales@kaiotix.com"
+                href="https://www.kaiotix.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center rounded overflow-hidden shadow-sm hover:opacity-90 transition-all border border-white/20"
