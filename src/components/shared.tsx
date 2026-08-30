@@ -275,10 +275,10 @@ export function Footer() {
           </div>
           <div>
             <p className="eyebrow text-[10px] mb-5" style={{ color: 'rgba(255,255,255,0.3)' }}>Contact</p>
-            <a href="mailto:info@starsandwildindia.com"
+            <a href="mailto:info@starsnstripesindia.com"
               className="text-sm block mb-4 hover:underline transition-colors"
               style={{ color: '#C9A24B' }}>
-              info@starsandwildindia.com
+              info@starsnstripesindia.com
             </a>
             <Link to="/book"
               className="inline-block px-6 py-2.5 text-[10px] tracking-[0.18em] uppercase font-semibold rounded-sm transition-all"
